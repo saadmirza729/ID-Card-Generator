@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="main-data">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Full Name:</label>
+            <input type="text" class="form-control fullname" id="input1"
+                placeholder="Enter your Full Name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email Address:</label>
+            <input type="email" class="form-control email" id="input2" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Course :</label>
+            <input type="text" class="form-control course" id="input3"
+                placeholder="Enter The Course Name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Batch :</label>
+            <input type="number" class="form-control batch main-input" id="input4"
+                placeholder="Enter Your Batch ">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Photo For ID :</label>
+            <input type="file" class="form-control photo" id="input5" placeholder="Enter Your Photo">
+        </div>
+        <button type="button" class="btn btn-primary btn" onclick="myForm()">GENERATE YOUR ID CARD</button>
+    </div>
+
+    <div id="idCard" class="id-card1"></div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
